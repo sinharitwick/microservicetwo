@@ -7,7 +7,10 @@ const port = 3000 || process.env.PORT
 const mongoose = require('mongoose');
 
 app.get('/', async (req, res, next) => {
-    res.send(`<h2> Micro-Task #2`);
+    res.send(
+        `<h2> Micro-Task #2</h2>
+        <p>Endpoints: GET - [/api/counter] for visitor counter, POST - [/users/register] for registering users and [/users/login] for logging in users.</p>`
+    );
 })
 
 //MIDDLEWARES
